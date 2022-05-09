@@ -45,42 +45,36 @@ public class Time {
 	}
 	
 	public Time nextSecond() {
-		int tempHour = hour;
-		int tempMinute = minute;
-		int tempSecond = second;
-		tempSecond++;
-		if (tempSecond == 60) {
-			tempSecond = 0;
-			tempMinute++;
-			if (tempMinute == 60) {
-				tempMinute = 0;
-				tempHour++;
-				if (tempHour == 24) {
-					tempHour = 0;
+		second++;
+		if (second == 60) {
+			second = 0;
+			minute++;
+			if (minute == 60) {
+				minute = 0;
+				hour++;
+				if (hour == 24) {
+					hour = 0;
 				}
 			}
 		}
-		Time ansTime = new Time(tempHour, tempMinute, tempSecond);
+		Time ansTime = new Time(hour, minute, second);
 		return ansTime;
 	}
 	
 	public Time previousSecond() {
-		int tempHour = hour;
-		int tempMinute = minute;
-		int tempSecond = second;
-		tempSecond--;
-		if (tempSecond == -1) {
-			tempSecond = 59;
-			tempMinute--;
-			if (tempMinute == -1) {
-				tempMinute = 59;
-				tempHour--;
-				if (tempHour == -1) {
-					tempHour = 23;
+		second--;
+		if (second == -1) {
+			second = 59;
+			minute--;
+			if (minute == -1) {
+				minute = 59;
+				hour--;
+				if (hour == -1) {
+					hour = 23;
 				}
 			}
 		}
-		Time ansTime = new Time(tempHour, tempMinute, tempSecond);
+		Time ansTime = new Time(hour, minute, second);
 		return ansTime;
 	}
 }
