@@ -45,36 +45,35 @@ public class Time {
 	}
 	
 	public Time nextSecond() {
-		second++;
-		if (second == 60) {
-			second = 0;
-			minute++;
-			if (minute == 60) {
-				minute = 0;
-				hour++;
-				if (hour == 24) {
-					hour = 0;
+		this.second++;
+		if (this.second == 60) {
+			this.second = 0;
+			this.minute++;
+			if (this.minute == 60) {
+				this.minute = 0;
+				this.hour++;
+				if (this.hour == 24) {
+					this.hour = 0;
 				}
 			}
 		}
-		Time ansTime = new Time(hour, minute, second);
-		return ansTime;
+		return this;
 	}
 	
 	public Time previousSecond() {
-		second--;
-		if (second == -1) {
-			second = 59;
-			minute--;
-			if (minute == -1) {
-				minute = 59;
-				hour--;
-				if (hour == -1) {
-					hour = 23;
+		this.second--;
+		if (this.second == -1) {
+			this.second = 59;
+			this.minute--;
+			if (this.minute == -1) {
+				this.minute = 59;
+				this.hour--;
+				if (this.hour == -1) {
+					this.hour = 23;
 				}
 			}
 		}
-		Time ansTime = new Time(hour, minute, second);
-		return ansTime;
+		
+		return this;
 	}
 }
