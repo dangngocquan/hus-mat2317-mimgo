@@ -8,19 +8,13 @@ public class Book2 {
 	
 	public Book2(String name, Author2[] author, double price) {
 		this.name = name;
-		this.author = new Author2[author.length];
-		for (int i = 0; i < author.length; i++) {
-			this.author[i] = author[i];
-		}
+		this.author = author;
 		this.price = price;
 	}
 	
 	public Book2(String name, Author2[] author, double price, int qty) {
 		this.name = name;
-		this.author = new Author2[author.length];
-		for (int i = 0; i < author.length; i++) {
-			this.author[i] = author[i];
-		}
+		this.author = author;
 		this.price = price;
 		this.qty = qty;
 	}

@@ -67,5 +67,4 @@ public class MyComplex {
 	public MyComplex addNew(MyComplex right) {
 		return new MyComplex(this.real + right.real, this.imag + right.imag);
 	}
-	
 }
