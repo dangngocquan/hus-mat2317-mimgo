@@ -1,11 +1,11 @@
 package week11;
 
-public class Customer {
+public class Customer3 {
 	private int id;
 	private String name;
 	private int discount;
 	
-	public Customer(int id, String name, int discount) {
+	public Customer3(int id, String name, int discount) {
 		this.id = id;
 		this.name = name;
 		this.discount = discount;

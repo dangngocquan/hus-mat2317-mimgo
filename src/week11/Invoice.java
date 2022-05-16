@@ -2,10 +2,10 @@ package week11;
 
 public class Invoice {
 	private int id;
-	private Customer customer;
+	private Customer3 customer;
 	private double amount;
 	
-	public Invoice(int id, Customer customer, double amount) {
+	public Invoice(int id, Customer3 customer, double amount) {
 		this.id = id;
 		this.customer = customer;
 		this.amount = amount;
@@ -15,11 +15,11 @@ public class Invoice {
 		return this.id;
 	}
 	
-	public Customer getCustomer() {
+	public Customer3 getCustomer() {
 		return this.customer;
 	}
 	
-	public void setCustomer(Customer customer) {
+	public void setCustomer(Customer3 customer) {
 		this.customer = customer;
 	}
 	
