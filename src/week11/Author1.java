@@ -1,11 +1,11 @@
 package week11;
 
-public class Author {
+public class Author1 {
 	private String name;
 	private String email;
 	private char gender;
 	
-	public Author(String name, String email, char gender) {
+	public Author1(String name, String email, char gender) {
 		this.name = name;
 		this.email = email;
 		this.gender = gender;

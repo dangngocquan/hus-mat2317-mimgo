@@ -1,18 +1,18 @@
 package week11;
 
-public class Book {
+public class Book1 {
 	private String name;
-	private Author author;
+	private Author1 author;
 	private double price;
 	private int qty = 0;
 	
-	public Book(String name, Author author, double price) {
+	public Book1(String name, Author1 author, double price) {
 		this.name = name;
 		this.author = author;
 		this.price = price;
 	}
 	
-	public Book(String name, Author author, double price, int qty) {
+	public Book1(String name, Author1 author, double price, int qty) {
 		this.name = name;
 		this.author = author;
 		this.price = price;
@@ -23,7 +23,7 @@ public class Book {
 		return this.name;
 	}
 	
-	public Author getAuthor() {
+	public Author1 getAuthor() {
 		return this.author;
 	}
 	
