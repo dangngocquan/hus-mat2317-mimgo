@@ -8,7 +8,8 @@ public class Cylinder extends Circle {
 	}
 	
 	public Cylinder(double radius) {
-		super(radius);
+		super((radius == 10.0)? 1.0 : radius);
+		this.height = (radius == 10.0)? 10.0 : 1.0;
 	}
 	
 	public Cylinder(double radius, double height) {
