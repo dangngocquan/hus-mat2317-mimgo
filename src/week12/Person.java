@@ -22,6 +22,6 @@ public class Person {
 	}
 	
 	public String toString() {
-		return String.format("Perdon[name=%s,address=%s]", this.name, this.address);
+		return String.format("Person[name=%s,address=%s]", this.name, this.address);
 	}
 }
