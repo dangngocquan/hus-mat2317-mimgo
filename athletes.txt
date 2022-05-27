@@ -1,0 +1,51 @@
+10
+Nguyen Van B
+1989
+Cau Long
+60
+190
+Nguyen Van C
+1990
+Bong Chuyen
+78
+188
+Nguyen Van D
+1998
+Boi Loi
+81
+188
+Tran Thi Lan
+1996
+Bong Ro
+78
+190
+Vu Thi Van
+1985
+Nhay Xa
+78
+187
+Le Thi Lan Anh
+1997
+Ban Sung
+67
+178
+Ta Cong Son
+1988
+Boi Loi
+89
+195
+Tran Thi Chinh
+1992
+Bong Chuyen
+78
+178
+Vu Ngoc Anh
+1999
+Bong Da
+81
+190
+Mac Van Khoi
+2000
+Nhay Cao
+70
+180
