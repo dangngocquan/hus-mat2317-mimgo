@@ -1,0 +1,26 @@
+3
+Nguyen Van B
+1989
+Cau Long
+60
+190
+Dang Van B
+1989
+Cau Long
+60
+190
+Nguyen Van C
+1990
+Bong Chuyen
+78
+188
+Nguyen Van D
+1998
+Boi Loi
+81
+188
+Dang Van B
+1989
+Cau Long
+60
+190
