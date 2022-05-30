@@ -48,8 +48,12 @@ public class MapExercise {
 	* Write a function to return the values of a map
 	*/
 	public static Collection<Integer> values(Map<Integer, Integer> map) {
-		
-	}
+		List<Integer> list  = new LinkedList<Integer>();
+		for  (int key :   map.keySet()) {
+			list.add(map.get(key));
+		}
+		return list;
+    }
 	
 	/**
 	* Write a function, internally using a map, returning "black", 
@@ -57,6 +61,14 @@ public class MapExercise {
 	* "black" = 0, "white" = 1, "red" = 2
 	*/
 	public static String getColor(int value) {
-		/* TODO */
+		switch (value) {
+		case 0:
+			return "black";
+		case 1:
+			return "white";
+		case 2:
+			return "red";
+		}
+		return "";
 	}
 }

@@ -1,7 +1,7 @@
 package week12;
 
 public class Shape {
-	private String color = "red";
+	private String color;
 	private boolean filled = true;
 	
 	public Shape() {

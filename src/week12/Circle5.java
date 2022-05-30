@@ -33,6 +33,6 @@ public class Circle5 extends Shape {
 	
 	@Override
 	public String toString() {
-		return String.format("Circle[%s,radius=%s]", super.toString(), this.radius);
+		return String.format("Circle[Shape[color=%s,filled=%s],radius=%s]", this.getColor() , this.isFilled(), this.radius);
 	}
 }
