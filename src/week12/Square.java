@@ -31,6 +31,6 @@ public class Square extends Rectangle {
 	}
 	
 	public String toString() {
-		return String.format("Square[%s]", super.toString());
+		return String.format("Square[Shape[color=%s,filled=%s],width=%s,length=%s]", super.getColor(),  super.isFilled(), super.getWidth(),  super.getLength());
 	}
 }
