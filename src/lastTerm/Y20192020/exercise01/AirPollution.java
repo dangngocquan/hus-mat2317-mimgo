@@ -16,8 +16,14 @@ public class AirPollution {
 			scanner = new Scanner(file);
 			ArrayList<Float> arrayList = new ArrayList<Float>();
 			while (scanner.hasNextLine()) {
-				int day = Integer.parseInt(scanner.next());
-				arrayList.add(Float.parseFloat(scanner.next()));
+				ArrayList<String> inputList = new ArrayList<String>();
+				while (scanner.hasNext()) {
+					inputList.add(scanner.next());
+				}
+				
+				for (int i = inputList.size() / 2; i < inputList.size(); i++) {
+					arrayList.add(Float.parseFloat(inputList.get(i)));
+				}
 			}
 			
 			pm = new float[arrayList.size()];
