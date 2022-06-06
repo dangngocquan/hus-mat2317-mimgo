@@ -26,7 +26,7 @@ public class FootballerTest {
 				int height = Integer.parseInt(scanner.nextLine());
 				int weight = Integer.parseInt(scanner.nextLine());
 				int location = Integer.parseInt(scanner.nextLine());
-				Footballer footballer = new Footballer(name, number, height, weight, 0.0, location);
+				Footballer footballer = new Footballer(name, number, height, weight, height*1.0 / (weight * weight), location);
 				arrayList.add(footballer);
 			}
 		} catch (IOException err) {
