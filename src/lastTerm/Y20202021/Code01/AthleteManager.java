@@ -6,25 +6,35 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AthleteManager {
-	private static Scanner scanner;
 	//1.
 	public static ArrayList<Athlete> readFile(String filename) throws IOException {
 		ArrayList<Athlete> arrayListAthlete = new ArrayList<Athlete>();
-		scanner = new Scanner(new File(filename));
-		int numberOfAthlete;
-		if (scanner.hasNextLine()) {
-			numberOfAthlete = Integer.parseInt(scanner.nextLine());
+		Scanner scanner = null;
+		File file = null;
+		try {
+			file = new File(filename);
+			scanner = new Scanner(file);
+			int numberOfAthlete;
+			if (scanner.hasNextLine()) {
+				numberOfAthlete = Integer.parseInt(scanner.nextLine());
+			}
+			while (scanner.hasNextLine()) {
+				String name = scanner.nextLine();
+				int year = Integer.parseInt(scanner.nextLine());
+				String sport = scanner.nextLine();
+				double weight = Double.parseDouble(scanner.nextLine());
+				double height = Double.parseDouble(scanner.nextLine());
+				Athlete athlete = new Athlete(name, year, sport, weight, height);
+				arrayListAthlete.add(athlete);
+			}
+		} catch (IOException ex) {
+			System.out.println("Error!");
+		} finally {
+			if (scanner != null) {
+				scanner.close();
+			}
 		}
-		while (scanner.hasNextLine()) {
-			String name = scanner.nextLine();
-			int year = Integer.parseInt(scanner.nextLine());
-			String sport = scanner.nextLine();
-			double weight = Double.parseDouble(scanner.nextLine());
-			double height = Double.parseDouble(scanner.nextLine());
-			Athlete athlete = new Athlete(name, year, sport, weight, height);
-			arrayListAthlete.add(athlete);
-		}
-		scanner.close();
+		
 		return arrayListAthlete;
 	}
 	
