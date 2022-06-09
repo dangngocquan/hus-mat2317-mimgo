@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AthleteManager {
 	//1.
-	public static ArrayList<Athlete> readFile(String filename) throws IOException {
+	public static ArrayList<Athlete> readFile(String filename) {
 		ArrayList<Athlete> arrayListAthlete = new ArrayList<Athlete>();
 		Scanner scanner = null;
 		File file = null;
