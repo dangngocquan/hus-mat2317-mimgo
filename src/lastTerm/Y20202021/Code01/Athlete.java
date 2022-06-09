@@ -1,4 +1,4 @@
-package lastTerm.Y20202021;
+package lastTerm.Y20202021.Code01;
 
 public class Athlete {
 	private String name;
